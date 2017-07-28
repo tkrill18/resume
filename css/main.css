@@ -1,3 +1,31 @@
-body {
+html body {
     font-family: "proxima-soft", -apple-system, "Helvetica Neue", "Helvatica", sans-serif;
+    background: #F0F9FE; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#F0F9FE, #E5F4ED);  /* Safari, Chrome */
+    background: -o-linear-gradient(#F0F9FE, #E5F4ED);       /* Opera */
+    background: -moz-linear-gradient(#F0F9FE, #E5F4ED);     /* Firefox */
+    background: linear-gradient(#F0F9FE, #E5F4ED);          /* Standard */
+}
+    /* background: -webkit-linear-gradient(#FFEDB9, #B9D8FF);  /* Safari, Chrome */
+    /*background: -webkit-linear-gradient(left, #FFCF3F, #3F95FF);  /* Safari, Chrome */
+
+body {
+    padding-top: 70px;
+}
+
+.navbar-brand {
+    font-weight: 400;
+}
+
+.navbar-text {
+    font-weight: 200;
+    font-style: italic;
+}
+
+.jumbotron-hero {
+    background: -webkit-linear-gradient(#3FBCFF, #3DF49F);  /* Safari, Chrome */
+}
+
+.text-hero {
+    font-weight: 700;
 }
