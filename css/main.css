@@ -29,3 +29,11 @@ body {
 .text-hero {
     font-weight: 700;
 }
+
+.text-section-header {
+    background: linear-gradient(90deg, #3FBCFF, #3DF49F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-style: italic;
+}
