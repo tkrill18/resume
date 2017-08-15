@@ -1,5 +1,5 @@
 html body {
-    font-family: "Atlas Grotesk", "proxima-soft", -apple-system, "Helvetica Neue", "Helvatica", sans-serif;
+    font-family: "gibson", -apple-system, "Helvetica Neue", "Helvatica", "Segoe UI", sans-serif;
     background: #F0F9FE; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#F0F9FE, #E5F4ED);  /* Safari, Chrome */
     background: -o-linear-gradient(#F0F9FE, #E5F4ED);       /* Opera */
