@@ -1,16 +1,14 @@
 html body {
-    font-family: "gibson", -apple-system, "Helvetica Neue", "Helvatica", "Segoe UI", sans-serif;
+    font-family: "canada-type-gibson", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
     background: #F0F9FE; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#F0F9FE, #E5F4ED);  /* Safari, Chrome */
     background: -o-linear-gradient(#F0F9FE, #E5F4ED);       /* Opera */
     background: -moz-linear-gradient(#F0F9FE, #E5F4ED);     /* Firefox */
     background: linear-gradient(#F0F9FE, #E5F4ED);          /* Standard */
 }
-    /* background: -webkit-linear-gradient(#FFEDB9, #B9D8FF);  /* Safari, Chrome */
-    /*background: -webkit-linear-gradient(left, #FFCF3F, #3F95FF);  /* Safari, Chrome */
 
 body {
-    padding-top: 70px;
+    padding-top: 70px; /* Accomodates fixed navbar. */
 }
 
 .navbar-brand {
@@ -47,18 +45,35 @@ body {
     background: transparent;
 }
 
-/*Hover.css Copyright Ian Lunn 2017. Generated with Sass.*/
-/* Grow */
-.hvr-grow {
-     -webkit-transform: perspective(1px) translateZ(0);
-     transform: perspective(1px) translateZ(0);
-     box-shadow: 0 0 1px transparent;
-     -webkit-transition-duration: 0.3s;
-     transition-duration: 0.3s;
-     -webkit-transition-property: transform;
-     transition-property: transform;
+/* From Hover.css (http://ianlunn.github.io/Hover/)*/
+/* Shadow */
+.hvr-shadow {
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
 }
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-     -webkit-transform: scale(1.02);
-     transform: scale(1.02);
+.hvr-shadow:hover, .hvr-shadow:focus, .hvr-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Glow */
+.hvr-glow {
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
