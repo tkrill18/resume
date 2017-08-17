@@ -1,5 +1,4 @@
-html body {
-    font-family: "canada-type-gibson", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+body {
     background: #F0F9FE; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#F0F9FE, #E5F4ED);  /* Safari, Chrome */
     background: -o-linear-gradient(#F0F9FE, #E5F4ED);       /* Opera */
@@ -7,17 +6,26 @@ html body {
     background: linear-gradient(#F0F9FE, #E5F4ED);          /* Standard */
 }
 
+body * {
+    font-family: "canada-type-gibson", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+}
+
 body {
     padding-top: 70px; /* Accomodates fixed navbar. */
 }
 
-.navbar-brand {
-    font-weight: 400;
+/* Places whitespace on margins for large displays. */
+@media (min-width: 992px) {
+    .container-fluid {
+        max-width: 75%;
+    }
 }
 
-.navbar-text {
+/* Formats "Software Engineer" in navbar.*/
+span.navbar-brand-subtitle {
     font-weight: 200;
     font-style: italic;
+    font-size: .75em;
 }
 
 .jumbotron-hero {
@@ -26,23 +34,78 @@ body {
 
 .text-hero {
     font-weight: 600;
-    color: white;
+}
+
+.rounded, .jumbotron {
+    border-radius: 0.5rem;
+}
+
+.panel-outline {
+    border-radius: 0.6rem;
+    padding: 1rem;
+    background: linear-gradient( #3FBCFF, #3DF49F);
+}
+
+.panel-inset {
+    border-radius: 0.4rem;
+    padding: 1rem;
+    background: white;
 }
 
 .text-section-header {
-    background: linear-gradient(90deg, #3FBCFF, #3DF49F);
+    background: linear-gradient( #3FBCFF, #3DF49F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
     font-style: italic;
 }
 
-.panel-media {
-    border: 10px solid;
-    padding: 10px;
-    border-radius: 25px;
-	border-image: linear-gradient(#3FBCFF, #3DF49F) 10;
-    background: transparent;
+/* Adapted from Google Inbox */
+
+.btn-fixed-action {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.btn-floating {
+    background-color: #017dbf;
+    color: white;
+
+    height: 60px;
+    width: 60px;
+    
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+
+    z-index: 21;
+}
+
+.spin {
+    -webkit-animation: spin 0.25s 1 linear;
+}
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.tooltip {
+    font-size: 1.5rem;   
+}
+
+ .tooltip-inner {
+    background-color: rgba(0, 0, 0, 0.67);
+}
+
+.tooltip-inner::before {
+    border-left-color: rgba(0, 0, 0, 0.67) !important;
 }
 
 /* From Hover.css (http://ianlunn.github.io/Hover/)*/

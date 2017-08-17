@@ -28,14 +28,10 @@
     <!-- End Favicons -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- FontAwesome JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- FontAwesome -->
     <script src="https://use.fontawesome.com/2f7fe778bd.js"></script>
-    <!-- TypeKit JS -->
+    <!-- TypeKit -->
     <script src="https://use.typekit.net/lpk8vid.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <!-- My CSS -->
@@ -43,98 +39,106 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid navbar-custom">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand">
-                    Thomas Krill
-                </a>
-                <p class="navbar-text">Software Engineer</p>
-            </div> <!-- /.navbar-header -->
-
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hvr-glow"><a href="index.html"><i class="fa fa-quote-left"></i>  About</a></li>
-                    <li class="hvr-glow"><a href="html/experiance.html"><i class="fa fa-briefcase"></i>  Experiance</a></li>
-                    <li class="hvr-glow"><a href="html/contact.html"><i class="fa fa-address-card"></i>  Contact</a></li>
-                </ul>
-            </div> <!-- /.navbar-collapse -->
-        </div> <!-- /.container-fluid -->
+    <nav class="navbar navbar-toggleable-sm fixed-top navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="navbar-brand mb-0">Thomas Krill
+            <span class="navbar-brand-subtitle">Software Engineer</span>
+        </h1>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-quote-left"></i>  About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-briefcase"></i>  Experiance</a></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-address-card"></i>  Contact</a>
+                </li>
+            </ul>
+        </div> <!-- /.navbar-collapse -->
     </nav> <!-- /.navbar -->
 
     <!-- Content -->
     <div class="container-fluid">
         <!-- Hero Title -->
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <div class="jumbotron jumbotron-hero hvr-glow">
-                    <h1 class="text-center text-hero">Thomas Krill.</h1>
-                    <p class="text-right">Software Engineer.</p>
-                </div> <!-- /.jumbotron -->
-            </div> <!-- /.col-md-8 -->
-        </div> <!-- /.row -->
+        <div class="jumbotron jumbotron-hero hvr-glow">
+            <h1 class="display-4 text-center text-hero">Thomas Krill.</h1>
+            <p class="lead text-right">Software Engineer.</p>
+        </div> <!-- /.jumbotron -->
+
         <!-- Large Image -->
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <img class="img-responsive img-rounded hvr-glow" src="img/landscape.jpg">
-            </div> <!-- /.col-md-8 -->
-        </div> <!-- /.row -->
+        <img class="img-fluid rounded hvr-glow" src="img/landscape.jpg">
         <hr>
         <h1 class="text-center text-section-header">What I&rsquo;ve Learned.</h1>
         <!-- First Media Object -->
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <div class="panel panel-media hvr-glow">
-                    <div class="media">
-                        <div class="media-left">
-                            <img src="img/pr.svg" class="media-object" style="width:20vw">
-                        </div>
-                        <div class="media-body">
-                            <h2 class="media-heading">Pine-Richland High School.</h2>
-                            <h4>During my time here, I was active in Student Government, National Honor Society, Mock Trial, and senior year, I served as Cross Country Captain and Marching Band Section Leader.</h4>
-                        </div>
-                    </div>
+
+        <div class="panel-outline">
+            <div class="panel-inset">
+                text
+            </div>
+        </div> <!-- /.panel-bg -->
+
+        <div class="panel panel-media hvr-glow">
+            <div class="media">
+                <div class="media-left">
+                    <img src="img/pr.svg" class="media-object" style="width:20vw">
                 </div>
-            </div> <!-- /.col-md-8 -->
-        </div> <!-- /.row -->
-        <!-- Second Media Object -->
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <div class="panel panel-media hvr-glow">
-                    <div class="media">
-                        <div class="media-body">
-                            <h2 class="media-heading">University of Notre Dame.</h2>
-                            <h4>I currently attend here, and am pursuing a major in Computer Science with minors in Philosophy and Corporate Practice. I&rsquo;m involved with Student Government, Design for America, and ND Votes.</h4>
-                        </div>
-                        <div class="media-right">
-                            <img src="img/nd.svg" class="media-object" style="width:20vw">
-                        </div>
-                    </div>
+                <div class="media-body">
+                    <h2 class="media-heading">Pine-Richland High School.</h2>
+                    <h4>During my time here, I was active in Student Government, National Honor Society, Mock Trial, and senior year, I served as Cross Country Captain and Marching Band Section Leader.</h4>
                 </div>
-            </div> <!-- /.col-md-8 -->
-        </div> <!-- /.row -->
-    </div> <!-- /.container-fluid -->
-    <br>
-    <!-- Fixed Panel for Resume Link -->
-    <div class="panel panel-default panel-floating panel-floating-fixed animated">
-        <div class="panel-body">
-            <h5>Resume</h5>
+            </div>
         </div>
-    </div>
+
+        <!-- Second Media Object -->
+
+        <div class="panel panel-media hvr-glow">
+            <div class="media">
+                <div class="media-body">
+                    <h2 class="media-heading">University of Notre Dame.</h2>
+                    <h4>I currently attend here, and am pursuing a major in Computer Science with minors in Philosophy and Corporate Practice. I&rsquo;m involved with Student Government, Design for America, and ND Votes.</h4>
+                </div>
+                <div class="media-right">
+                    <img src="img/nd.svg" class="media-object" style="width:20vw">
+                </div>
+            </div>
+        </div>
+    </div> <!-- /.container-fluid -->
+
+
+        <button class="btn-floating btn-fixed-action text-center grey-tooltip" data-toggle="tooltip" data-placement="left" data-html="true" title="View My R&eacute;sum&eacute;">
+            <i class="fa fa-paperclip fa-2x fa-fw" aria-hidden="true"></i>
+        </button>
+
+
+
+    <!-- Resume Button -->
+    <!-- <button type="button" class="btn btn-primary btn-lg btn-floating"><i class="fa fa-file-text-o" aria-hidden="true"></i> View My R&eacute;sum&eacute;</button> -->
+
+    <!-- Fixed Panel for Resume Link -->
+    <!-- <div class="panel panel-default panel-floating panel-floating-fixed animated">
+        <div class="panel-body">
+            <button class="btn btn-primary btn-block"><i class="fa fa-file-text-o" aria-hidden="true"></i> View My R&eacute;sum&eacute;</button>
+        </div>
+    </div> -->
     <!-- Footer -->
     <footer>
         <div class="container-fluid div-footer" style="background-color:#f8f8f8;">
-            <p class="text-center">&#169; 2017 Copyright: Thomas Krill</p>
+            <p class="text-center">&#169; 2017 Thomas Krill</p>
         </div> <!-- /.container-fluid -->
     </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <!-- Tether -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- My JS -->
+    <script src="js/main.js"></script>
 </body>
 </html>
