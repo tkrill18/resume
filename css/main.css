@@ -1,9 +1,7 @@
 body {
-    background: #F0F9FE; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#F0F9FE, #E5F4ED);  /* Safari, Chrome */
-    background: -o-linear-gradient(#F0F9FE, #E5F4ED);       /* Opera */
-    background: -moz-linear-gradient(#F0F9FE, #E5F4ED);     /* Firefox */
-    background: linear-gradient(#F0F9FE, #E5F4ED);          /* Standard */
+    background: #F3FDF9; /* For browsers that do not support gradients */
+    background: radial-gradient(circle farthest-corner at 0px 0px, #97DAFE 0%,#F3FDF9 30%)
+
 }
 
 body * {
@@ -14,11 +12,31 @@ body {
     padding-top: 70px; /* Accomodates fixed navbar. */
 }
 
+section {
+    margin-top: -70px; /* Adjusts section links */
+    padding-top: 70px;
+}
+
 /* Places whitespace on margins for large displays. */
 @media (min-width: 992px) {
     .container-fluid {
         max-width: 75%;
     }
+    .navbar {
+        max-width: 75%;
+        margin: 0 auto;
+        border-radius: 0 0 0.6rem 0.6rem;
+    }
+    .footer {
+        max-width: 75%;
+        margin: 0 auto;
+        border-radius: 0.6rem 0.6rem 0 0;
+    }
+}
+
+.navbar {
+    border-bottom-width: 20px;
+    border-color: black;
 }
 
 /* Formats "Software Engineer" in navbar.*/
@@ -28,8 +46,28 @@ span.navbar-brand-subtitle {
     font-size: .75em;
 }
 
-.jumbotron-hero {
-    background: -webkit-linear-gradient(#3FBCFF, #3DF49F);  /* Safari, Chrome */
+.jumbotron-hero, .panel-outline, .text-section-header, a.nav-link.active {
+    background: -webkit-linear-gradient(#3FBCFF, #3DF49F);
+    background: -moz-linear-gradient(#3FBCFF, #3DF49F);
+    background: -o-linear-gradient(#3FBCFF, #3DF49F);
+    background: linear-gradient(#3FBCFF, #3DF49F);
+}
+
+.navbar-nav .nav-link {
+    border-radius: 0.6rem;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 900;
+}
+
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        padding-left: 10px;
+    }
+    .navbar-nav .nav-link.active {
+        width: 50%;
+    }
 }
 
 .text-hero {
@@ -43,7 +81,6 @@ span.navbar-brand-subtitle {
 .panel-outline {
     border-radius: 0.6rem;
     padding: 1rem;
-    background: linear-gradient( #3FBCFF, #3DF49F);
 }
 
 .panel-inset {
@@ -53,15 +90,35 @@ span.navbar-brand-subtitle {
 }
 
 .text-section-header {
-    background: linear-gradient( #3FBCFF, #3DF49F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
     font-style: italic;
 }
 
-/* Adapted from Google Inbox */
+/* Zooms image on hover. */
+/* Adapted from https://codepen.io/Remedy/pen/ZYJrpp. */
+.item {
+    overflow: hidden;
+    border-radius: 0.6rem;
+}
 
+.item img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.item:hover img {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+/* End Section */
+
+/* Styles fixed action button. */
+/* Adapted from Google Inbox. */
 .btn-fixed-action {
     position: fixed;
     bottom: 25px;
@@ -83,7 +140,9 @@ span.navbar-brand-subtitle {
 
     z-index: 21;
 }
+/* End Section */
 
+/* Spins the paper-clip icon once. */
 .spin {
     -webkit-animation: spin 0.25s 1 linear;
 }
@@ -106,6 +165,21 @@ span.navbar-brand-subtitle {
 
 .tooltip-inner::before {
     border-left-color: rgba(0, 0, 0, 0.67) !important;
+}
+
+.img-collapse {
+    max-width: 33%;
+}
+
+@media (min-width: 576px) {
+    .img-collapse {
+        max-width: 100%;
+    }
+}
+
+.footer {
+    background-color: #009652;
+    color: white;
 }
 
 /* From Hover.css (http://ianlunn.github.io/Hover/)*/
@@ -138,5 +212,5 @@ span.navbar-brand-subtitle {
   transition-property: box-shadow;
 }
 .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
