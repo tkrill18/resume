@@ -58,7 +58,7 @@ span.navbar-brand-subtitle {
 }
 
 .navbar-nav .nav-link.active {
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 
 @media (max-width: 576px) {
