@@ -7,7 +7,7 @@ $(function () {
     $("body").scrollspy({ target: '#navbar-main' })
 
     $(document).on("click", function(e) {
-        if ($(e.target).attr("class").substring(0,3) != "nav") {
+        if (($(e.target).attr("class") || "").substring(0,3) != "nav") {
             $(".collapse").collapse("hide");
         }
         
@@ -22,6 +22,7 @@ $(function () {
     $(".btn-floating").on("click", function() {
         if (popoverShown) {
             console.log("allowed click")
+            window.open("resources/resume.pdf")
         }
         else {
             console.log("blocked click")
