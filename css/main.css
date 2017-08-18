@@ -1,6 +1,6 @@
 body {
     background: #F3FDF9; /* For browsers that do not support gradients */
-    background: radial-gradient(circle farthest-corner at 0px 0px, #97DAFE 0%,#F3FDF9 30%)
+    background: linear-gradient(100deg, #97DAFE, 0%,#CAECFF 20%, #CFFEE9 80%, #9AFACE 100%)
 
 }
 

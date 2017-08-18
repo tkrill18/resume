@@ -6,6 +6,13 @@ $(function () {
     // Enables scrollspy.
     $("body").scrollspy({ target: '#navbar-main' })
 
+    $(document).on("click", function(e) {
+        if ($(e.target).attr("class").substring(0,3) != "nav") {
+            $(".collapse").collapse("hide");
+        }
+        
+    })
+
     $(".btn-floating").on("shown.bs.tooltip", function () {
         popoverShown = true;
     })
