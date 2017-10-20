@@ -33,6 +33,13 @@ section {
 .navbar {
     border-bottom-width: 20px;
     border-color: black;
+    opacity: 0.95;
+}
+
+.navbar::before {
+    z-index: -1;
+    filter: blur(5px);
+    opacity: 0.5;
 }
 
 /* Formats "Software Engineer" in navbar.*/
@@ -104,17 +111,48 @@ span.navbar-brand-subtitle {
     font-style: italic;
 }
 
-.icon-big {
+/* .icon-big {
     font-size: 5rem;
-}
-
-/* a *.icon-big {
     color: black;
+} */
+
+button.link-lin-btn, button.link-em-btn, button.link-gh-btn {
+    background: black;
+    transition: .5s all;  
 }
 
-a *.icon-big:hover {
-    color: grey;
-} */
+a.link-lin-icon, a.link-em-icon, a.link-gh-icon {
+    font-size: 5rem;
+    color: black;
+    transition: .5s all;   
+}
+
+div.link-contact:hover > .link-lin-icon {
+    color: #0077B5;
+}
+
+div.link-contact:hover > .link-lin-btn {
+    background: #0077B5;
+    border-color: #0077B5;
+}
+
+div.link-contact:hover > .link-em-icon {
+    color: #EA4335;
+}
+
+div.link-contact:hover > .link-em-btn {
+    background: #EA4335;
+    border-color: #EA4335;
+}
+
+div.link-contact:hover > .link-gh-icon {
+    color: #6CC644;
+}
+
+div.link-contact:hover > .link-gh-btn {
+    background: #6CC644;
+    border-color: #6CC644;
+}
 
 .footer-link {
     color: white;
