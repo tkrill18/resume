@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Language Specification -->
+    <link rel="alternate" href="http://tkrill.info" hreflang="en-us" />
+
     <!-- Favicons (generated from favicomatic.com)-->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png" />
@@ -54,16 +57,19 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <h1 class="navbar-brand mb-0">Thomas Krill
+        <a class="navbar-brand">
+            <img src="img/tk.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Thomas Krill
             <span class="navbar-brand-subtitle">Software Engineer</span>
-        </h1>
+        </a>
+
         <div class="collapse navbar-collapse" id="navbar-main">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#about"><i class="fa fa-quote-left fa-fw"></i>&nbsp;About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#experiance"><i class="fa fa-briefcase fa-fw"></i>&nbsp;Experiance</a></a>
+                    <a class="nav-link" href="#experience"><i class="fa fa-briefcase fa-fw"></i>&nbsp;Experience</a></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact"><i class="fa fa-address-card fa-fw"></i>&nbsp;Contact</a>
@@ -75,52 +81,53 @@
     <!-- Content -->
     <div class="container-fluid">
         <section id="about">
-        <!-- Hero Title -->
-        <div class="jumbotron jumbotron-hero">
-            <h1 class="display-4 text-center text-hero">Thomas Krill.</h1>
-            <p class="lead text-right">Software Engineer.</p>
-        </div> <!-- /.jumbotron -->
+            <!-- Hero Title -->
+            <div class="jumbotron jumbotron-hero">
+                <h1 class="display-4 text-center text-hero">Thomas Krill.</h1>
+                <p class="lead text-right">Software Engineer.</p>
+            </div> <!-- /.jumbotron -->
 
-        <!-- Large Image -->
-        <div class="div-zoom rounded">
-            <img class="img-fluid rounded img-zoom" src="img/landscape.jpg">
-        </div>
+            <!-- Large Image -->
+            <img class="img-fluid rounded img-hero" src="img/landscape.jpg">
         </section>
-        <section id="experiance">
-        <h1 class="text-center text-section-header">What I&rsquo;ve Learned.</h1>
 
-        <!-- First Panel -->
-        <div class="panel-outline mb-4">
-            <div class="panel-inset">
-                <div class="row">
-                    <div class="col-sm-4 text-center">
-                        <img class="img-fluid img-collapse" src="img/nd.svg" alt="Card image cap">
-                    </div>
-                    <div class="col-sm-8">
-                        <h3 class="card-title">University of Notre Dame</h3>
-                        <p class="card-text">I currently attend here, and am pursuing a major in Computer Science with minors in Philosophy and Corporate Practice. I’m involved with Student Government, Design for America, and ND Votes.</p>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- /.panel-outline -->
-        <!-- First Panel -->
-        <div class="panel-outline mb-4">
-            <div class="panel-inset">
-                <div class="row">
-                    <div class="col-sm-4 text-center">
-                        <img class="img-fluid img-collapse" src="img/nd.svg" alt="Card image cap">
-                    </div>
-                    <div class="col-sm-8">
-                        <h3 class="card-title">University of Notre Dame</h3>
-                        <p class="card-text">I currently attend here, and am pursuing a major in Computer Science with minors in Philosophy and Corporate Practice. I’m involved with Student Government, Design for America, and ND Votes.</p>
+        <section id="experience">
+            <h1 class="text-center text-section-header">Where I&rsquo;ve Studied.</h1>
+
+            <!-- First Panel -->
+            <div class="panel-outline mb-4">
+                <div class="panel-inset">
+                    <div class="row">
+                        <div class="col-sm-4 text-center">
+                            <img class="img-fluid img-collapse" src="img/nd.svg" alt="Notre Dame Monogram">
+                        </div>
+                        <div class="col-sm-8">
+                            <h3 class="card-title">University of Notre Dame</h3>
+                            <p class="card-text">I currently attend here, and am pursuing a major in Computer Science with minors in Philosophy and Corporate Practice. I’m involved with Student Government, Design for America, and ND Votes.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div> <!-- /.panel-outline -->
+            </div> <!-- /.panel-outline -->
+
+            <!-- Second Panel -->
+            <div class="panel-outline mb-4">
+                <div class="panel-inset">
+                    <div class="row">
+                        <div class="col-sm-4 push-sm-8 text-center">
+                            <img class="img-fluid img-collapse" src="img/pr.svg" alt="Pine-Richland Monogram">
+                        </div>
+                        <div class="col-sm-8 pull-sm-4">
+                            <h3 class="card-title">Pine-Richland High School</h3>
+                            <p class="card-text">I currently attend here, and am pursuing a major in Computer Science with minors in Philosophy and Corporate Practice. I’m involved with Student Government, Design for America, and ND Votes.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- /.panel-outline -->
 
         </section>
         <section id="contact">
-        <h1 class="text-center text-section-header" id="experiance">What I&rsquo;ve Experianced.</h1>
+        <h1 class="text-center text-section-header">What I&rsquo;ve Experienced.</h1>
 
         <!-- First Panel -->
         <div class="panel-outline mb-4">
@@ -166,7 +173,7 @@
         </div> <!-- /.container -->
     </footer>
 
-    <!-- Scripts -->
+    <!-- SCRIPTS -->
     <!-- jQuery-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Tether -->
