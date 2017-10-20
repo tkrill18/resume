@@ -116,7 +116,7 @@ span.navbar-brand-subtitle {
     color: black;
 } */
 
-button.link-lin-btn, button.link-em-btn, button.link-gh-btn {
+a.link-lin-btn, a.link-em-btn, a.link-gh-btn {
     background: black;
     transition: .5s all;  
 }
