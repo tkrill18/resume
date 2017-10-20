@@ -16,9 +16,6 @@ $(function () {
 
     })
 
-    
-
-
     $(".btn-floating").on("shown.bs.tooltip", function () {
         popoverShown = true;
     })
@@ -79,5 +76,9 @@ $(function () {
         }
     });
 
-    sr.reveal('.container-fluid *', {reset: true});
+    sr.reveal('#about *, #experience *, #contact *', {
+        reset: true,
+        viewOffset: {top: 70},
+        viewFactor: 0.1
+    });
 })
