@@ -1,35 +1,31 @@
 body {
     background: #F3FDF9; /* For browsers that do not support gradients */
-    background: linear-gradient(100deg, #97DAFE, 0%,#CAECFF 20%, #CFFEE9 80%, #9AFACE 100%)
-
+    background: linear-gradient(100deg, #97DAFE, 0%,#CAECFF 20%, #CFFEE9 80%, #9AFACE 100%);
+    padding-top: 70px; /* Accomodates fixed-top navbar. */
 }
 
 body * {
     font-family: "canada-type-gibson", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-body {
-    padding-top: 70px; /* Accomodates fixed navbar. */
-}
-
 section {
-    margin-top: -70px; /* Adjusts section links */
+    margin-top: -70px; /* Adjusts section links to accomodate fixed-top navbar. */
     padding-top: 70px;
 }
 
-/* Places whitespace on margins for large displays. */
+/* Places whitespace on margins for large displays and adds rounded corners to navbar and footer. */
 @media (min-width: 992px) {
     .container-fluid {
         max-width: 75%;
     }
-    .navbar {
+    .navbar, .footer {
         max-width: 75%;
         margin: 0 auto;
+    }
+    .navbar {
         border-radius: 0 0 0.6rem 0.6rem;
     }
     .footer {
-        max-width: 75%;
-        margin: 0 auto;
         border-radius: 0.6rem 0.6rem 0 0;
     }
 }
@@ -51,6 +47,10 @@ span.navbar-brand-subtitle {
     background: -moz-linear-gradient(#3FBCFF, #3DF49F);
     background: -o-linear-gradient(#3FBCFF, #3DF49F);
     background: linear-gradient(#3FBCFF, #3DF49F);
+}
+
+.jumbotron-hero, .img-hero, .text-section-header {
+    margin-bottom: 1rem;
 }
 
 .navbar-nav .nav-link {
@@ -89,12 +89,32 @@ span.navbar-brand-subtitle {
     background: white;
 }
 
+
+@media (max-width: 576px) {
+    .card-title {
+        text-align: center;
+    }
+}
+
+
 .text-section-header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
     font-style: italic;
 }
+
+.icon-big {
+    font-size: 5rem;
+}
+
+/* a *.icon-big {
+    color: black;
+}
+
+a *.icon-big:hover {
+    color: grey;
+} */
 
 .footer-link {
     color: white;
@@ -103,28 +123,6 @@ span.navbar-brand-subtitle {
 .footer-link:hover {
     color: lightgrey;
 }
-
-/* Zooms image on hover. */
-/* Adapted from https://codepen.io/Remedy/pen/ZYJrpp. */
-.div-zoom {
-    overflow: hidden;
-    border-radius: 0.6rem;
-}
-
-.div-zoom img {
-    max-width: 100%;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.div-zoom:hover img {
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-    border-radius: 0.6rem;
-}
-/* End Section */
 
 /* Styles fixed action button. */
 /* Adapted from Google Inbox. */
@@ -222,3 +220,5 @@ span.navbar-brand-subtitle {
 .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active, .navbar {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
+
+/* End Section */
