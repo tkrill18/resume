@@ -5,13 +5,19 @@ $(function () {
     $(".btn-fixed-action").tooltip()
     // Enables scrollspy.
     $("body").scrollspy({ target: '#navbar-main' })
+    // Initializes ScrollReveal
+    window.sr = ScrollReveal();
 
+    // Collapses navbar on click away.
     $(document).on("click", function(e) {
         if (($(e.target).attr("class") || "").substring(0,3) != "nav") {
             $(".collapse").collapse("hide");
         }
-        
+
     })
+
+    
+
 
     $(".btn-floating").on("shown.bs.tooltip", function () {
         popoverShown = true;
@@ -44,8 +50,8 @@ $(function () {
     .click(function(event) {
         // On-page links
         if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-            && 
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+            &&
             location.hostname == this.hostname
         ) {
             // Figures out which element to scroll to.
@@ -72,4 +78,6 @@ $(function () {
             }
         }
     });
+
+    sr.reveal('.container-fluid *', {reset: true});
 })

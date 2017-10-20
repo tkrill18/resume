@@ -2,6 +2,7 @@ body {
     background: #F3FDF9; /* For browsers that do not support gradients */
     background: linear-gradient(100deg, #97DAFE, 0%,#CAECFF 20%, #CFFEE9 80%, #9AFACE 100%);
     padding-top: 70px; /* Accomodates fixed-top navbar. */
+    height: 100%
 }
 
 body * {
