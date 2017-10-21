@@ -76,9 +76,9 @@ $(function () {
         }
     });
 
-    sr.reveal('#about *, #experience *, #contact *', {
-        reset: true,
-        viewOffset: {top: 70},
-        viewFactor: 0.1
-    });
+    // sr.reveal('#about *, #experience *, #contact *', {
+    //     reset: true,
+    //     viewOffset: {top: 70},
+    //     viewFactor: 0.1
+    // });
 })
