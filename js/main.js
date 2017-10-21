@@ -18,7 +18,6 @@ $(function () {
     // Hides tooltip on click away.
     $(document).on("click mouseenter", function(e) {
         if (($(e.target).attr("class") || "") != "btn-floating" && popoverShown) {
-            console.log("hidden");
             $(".btn-floating").tooltip('hide');
         }
     })
