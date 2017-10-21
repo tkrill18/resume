@@ -13,12 +13,7 @@ $(function () {
         if (($(e.target).attr("class") || "").substring(0,3) != "nav") {
             $(".collapse").collapse("hide");
         }
-
     })
-
-    $("*").hover(function(e) {
-        console.log($(e.target))
-    });
 
     $(".btn-floating").on("shown.bs.tooltip", function () {
         popoverShown = true;
@@ -80,9 +75,9 @@ $(function () {
         }
     });
 
-    // sr.reveal('#about *, #experience *, #contact *', {
-    //     reset: true,
-    //     viewOffset: {top: 70},
-    //     viewFactor: 0.1
-    // });
+    sr.reveal('#about *, #experience *, #contact *', {
+        reset: true,
+        viewOffset: {top: 70},
+        viewFactor: 0.1
+    });
 })
