@@ -45,6 +45,7 @@ $(function () {
                 $(".btn-floating i").removeClass("spin");
             })
             $(".btn-floating").tooltip('show');
+            popoverShown = true;
         }
      });
 
