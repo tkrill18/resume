@@ -13,13 +13,9 @@ $(function () {
         if (($(e.target).attr("class") || "").substring(0,3) != "nav") {
             $(".collapse").collapse("hide");
         }
-        
-    })
-    // Hides tooltip on click away.
-    $(document).on("click mouseenter", function(e) {
         if (($(e.target).attr("class") || "") != "btn-floating" && popoverShown) {
             $(".btn-floating").tooltip('hide');
-        }
+        }    
     })
 
     $(".btn-floating").on("shown.bs.tooltip", function () {
