@@ -16,6 +16,10 @@ $(function () {
 
     })
 
+    $("*").hover(function(e) {
+        console.log($(e.target))
+    });
+
     $(".btn-floating").on("shown.bs.tooltip", function () {
         popoverShown = true;
     })

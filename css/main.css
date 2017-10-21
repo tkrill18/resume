@@ -108,7 +108,7 @@ span.navbar-brand-subtitle {
     padding: 10px;
     color: white;
     transition: transform .35s ease-out;
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 .overlay {
@@ -127,10 +127,13 @@ span.navbar-brand-subtitle {
 .overlay > blockquote {
     position: relative;
     font-size: 1.2em;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
     font-style: italic;
     background: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    margin-top: 25%;
 }
 .overlay > blockquote > em {
     font-style: normal;
@@ -146,6 +149,7 @@ span.navbar-brand-subtitle {
 
 .img-holder {
     overflow: hidden;
+    position: relative;
 }
 
 .img-holder:hover > .img-hero {
