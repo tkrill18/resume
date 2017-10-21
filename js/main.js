@@ -13,6 +13,9 @@ $(function () {
         if (($(e.target).attr("class") || "").substring(0,3) != "nav") {
             $(".collapse").collapse("hide");
         }
+        if (($(e.target).attr("class") || "") != "btn-floating") {
+            $(".btn-floating").tooltip('hide');
+        }
     })
 
     $(".btn-floating").on("shown.bs.tooltip", function () {
@@ -37,7 +40,7 @@ $(function () {
             $(".btn-floating i").addClass("spin").promise(function() {
                 $(".btn-floating i").removeClass("spin");
             })
-            $(".btn-floating").tooltip('show')
+            $(".btn-floating").tooltip('show');
         }
      });
 
