@@ -13,7 +13,8 @@ $(function () {
         if (($(e.target).attr("class") || "").substring(0,3) != "nav") {
             $(".collapse").collapse("hide");
         }
-        if (($(e.target).attr("class") || "") != "btn-floating") {
+        if (($(e.target).attr("class") || "") != "btn-floating" && popoverShown) {
+            console.log("hidden");
             $(".btn-floating").tooltip('hide');
         }
     })
