@@ -21,7 +21,7 @@ $(function () {
             console.log("hidden");
             $(".btn-floating").tooltip('hide');
         }
-    }
+    })
 
     $(".btn-floating").on("shown.bs.tooltip", function () {
         popoverShown = true;
