@@ -136,11 +136,11 @@ span.navbar-brand-subtitle {
     font-style: normal;
 }
 
-.img-holder:hover > .overlay {
+.img-holder:hover > .overlay, .img-holder:active > .overlay {
     opacity: 1 !important;
 }
 
-.img-holder:hover > .info-prompt {
+.img-holder:hover > .info-prompt, .img-holder:active > .info-prompt {
     opacity: 0 !important;
 }
 
