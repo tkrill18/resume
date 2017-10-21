@@ -309,37 +309,3 @@ div.link-gh-contact:hover .link-gh-btn {
     background-color: #009652;
     color: white;
 }
-
-/* From Hover.css (http://ianlunn.github.io/Hover/)*/
-/* Shadow */
-.hvr-shadow {
-  /* display: inline-block; */
-  /* vertical-align: middle; */
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow;
-  transition-property: box-shadow;
-}
-.hvr-shadow:hover, .hvr-shadow:focus, .hvr-shadow:active {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-}
-
-/* Glow */
-.hvr-glow, .navbar {
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow;
-  transition-property: box-shadow;
-}
-
-.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active, .navbar {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-}
-
-/* End Section */

@@ -23,18 +23,23 @@ $(function () {
     })
     $(".btn-floating").on("click", function() {
         if (popoverShown) {
-            console.log("allowed click")
             window.open("resources/resume.pdf")
         }
-        else {
-            console.log("blocked click")
-        }
     })
-    $(".btn-floating").hover( function() {
+    $(".btn-floating").hover(function() {
         $(".btn-floating i").addClass("spin");
     }, function() {
         $(".btn-floating i").removeClass("spin");
     })
+
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() == $(document).height()) {
+            $(".btn-floating i").addClass("spin").promise(function() {
+                $(".btn-floating i").removeClass("spin");
+            })
+            $(".btn-floating").tooltip('show')
+        }
+     });
 
 
     // From CSS Tricks (https://css-tricks.com/snippets/jquery/smooth-scrolling/)
