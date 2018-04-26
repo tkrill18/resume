@@ -52,8 +52,7 @@ function getPkmnAjax(pokedexNum) {
     $(".loader").show();
     $.getJSON(basePokeAPIURL + pokedexNum + "?callback=?")
         .done(function(data) {
-            data = JSON.parse(data);
-            var name = data.forms.name;
+            var name = data.forms[0].name;
             var imgURL = data.sprites.front_default;
             $("#trial").attr('src', imgURL);
             $("#trial").css("filter", "brightness(0)");
